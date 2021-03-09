@@ -1,0 +1,15 @@
+$color: green;
+
+@keyframes sexy {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+}
+
+body {
+  background-color: $color;
+  position: sticky;
+}

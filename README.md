@@ -42,6 +42,27 @@
 
 <br>
 
+## 2021. Mar. 9th
+
+### 2.2 Recap 요약
+
+- 웹소켓이 서버에 연결될 때마다 connection이라는 이벤트를 전달받는다.
+- 연결은 계속 유지된다.
+- 연결이 끊길 때는 유저가 offline이거나 서버가 연결이 끊겼을 때. (client or server가 연결을 끊을 때!)
+- socket은 우리가 연결된 socket과 상호작용할 수 있는 방법
+- emit: 기본적으로 이벤트를 보낸다. 이벤트를 발생시키고 연결된 socket에 이벤트를 보낸다.
+- broadcast: 이벤트를 보낸다. 현재 연결된 socket을 제외한 모든 socket에 이벤트를 보낸다.
+- 이벤트를 발생시킬 때 클라이언트에 이벤트를 발생시키는데 클라이언트가 이벤트를 듣고 있어야 한다.
+- 클라이언트가 이벤트를 듣고 있지 않다면 서버로부터 이벤트가 발생해도 쓸모없다.
+- 모든 클라이언트들은 똑같은 이벤트를 듣고 있어야 한다. 아니면 서버가 어떤 이벤트를 보내도 아무 이벤트도 받을 수 없다.
+- server.js는 backend, index.js는 client
+
+<br>
+
+### #3
+
+- gulp, scss, browserify
+
 ## Reference
 
 - [Socket.IO](https://socket.io/)
