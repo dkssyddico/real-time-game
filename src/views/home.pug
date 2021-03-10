@@ -7,6 +7,13 @@ html(lang="en")
     link(rel="stylesheet", href="styles/styles.css")
     title Guess Mine
   body 
-    h1 Hello
+    .loginBox
+      form#jsLogin
+        input(placeholder="What's your nickname", type="text")
+    .gameContainer#jsGame
+      h1 You are logged in
+      div#jsNotifications
+    script.
+      window.events = !{events}
     script(src="/socket.io/socket.io.js") 
     script(src="/js/main.js") 
