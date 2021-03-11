@@ -2,6 +2,9 @@
 @import 'variables';
 @import 'reset';
 @import 'login';
+@import 'chat';
+@import 'notifications';
+@import 'game';
 
 * {
   box-sizing: border-box;
@@ -29,7 +32,7 @@ body {
   }
   &.loggedOut {
     .loginBox {
-      display: block;
+      display: flex;
     }
   }
   &.loggedIn {
